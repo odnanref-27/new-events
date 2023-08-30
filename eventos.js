@@ -1,3 +1,11 @@
+
+function botonSaludar(event) {
+    var mensajeSaludo = document.getElementById("mensajeSaludo");
+    event.stopPropagation(); 
+    mensajeSaludo.textContent = "HOLA!! ";
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     var element = document.getElementById('div');
     element.addEventListener('click', function () {
