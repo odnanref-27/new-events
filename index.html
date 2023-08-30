@@ -8,7 +8,17 @@
 </head>
 
 <body>
-    <button >Saludar!</button>
+    <button onclick="botonSaludar" >Saludar!</button>
+    <p id="mensajeSaludo"></p>
+        id="botonSaludo"
+    <script>
+        var botonSaludo = document.getElementById("botonSaludo");
+        var mensajeSaludo = document.getElementById("mensajeSaludo");
+
+        botonSaludo.addEventListener("click", function () {
+            mensajeSaludo.textContent = "Hola, funciona esto?"
+        });
+    </script>
 </body>
 
 </html>
