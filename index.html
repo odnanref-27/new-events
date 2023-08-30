@@ -4,21 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Eventos</title>
+    <script src="eventos.js"></script>
+    <title>New Events</title>
 </head>
 
 <body>
-    <button onclick="botonSaludar" >Saludar!</button>
-    <p id="mensajeSaludo"></p>
-        id="botonSaludo"
-    <script>
-        var botonSaludo = document.getElementById("botonSaludo");
-        var mensajeSaludo = document.getElementById("mensajeSaludo");
 
-        botonSaludo.addEventListener("click", function () {
-            mensajeSaludo.textContent = "Hola, funciona esto?"
-        });
-    </script>
+    <div id="div" style="padding: 5%; background-color: green;">
+        <button onclick=botonSaludar()>Saludar!</button>
+        <p id="mensajeSaludo"></p>
+    </div>
 </body>
 
 </html>
