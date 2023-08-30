@@ -1,6 +1,7 @@
-function botonSaludar() {
+function botonSaludar(event) {
     var mensajeSaludo = document.getElementById("mensajeSaludo");
-    mensajeSaludo.textContent = "Hola, funciona esto?";
+    event.stopPropagation(); 
+    mensajeSaludo.textContent = "HOLA!! ";
 }
 document.addEventListener('DOMContentLoaded', function () {
     var element = document.getElementById('div');
